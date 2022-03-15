@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+nav {
+    background-color: aqua;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    text-align: left;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #206A5D;
+}
+
+footer {
+    padding: 12px;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    font-weight: none;
+}
+
+.diagram {
+    height: 300px;
+    background-color: #BFFFF0;
+    padding: 10px;
+    text-align: center;
+    vertical-align: inherit;
+}
+
+.content td {
+    box-shadow: 0px 0px 1px 1px rgba(29, 29, 29, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.sidebar {
+    text-align: left;
+    padding: 10px;
+}
