@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+nav {
+    background-color: aqua;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    text-align: left;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #206A5D;
+}
+
+footer {
+    padding: 12px;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    font-weight: none;
+}
+
+.content td {
+    box-shadow: 0px 0px 1px 1px rgba(29, 29, 29, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.sidebar {
+    text-align: left;
+    padding: 10px;
+}
+.slide-show{
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    width: 550px;
+}
+.isi-slide img{
+    height: 300px;
+    width: 550px;
+    float: left;
+}
+.isi-slide{
+    position: absolute;
+    width: 2000px;
+    
+    /*Durasi tampil*/
+    
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: slider;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: slider;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: slider;
+    -o-animation-duration: 10s;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;    
+}
+
+/*Ketika gambar dihover*/
+.isi-slide: hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.isi-slide: after{
+    position: absolute;
+    z-index: 12;
+    left: 200px; top: 50px;
+    -webkit-transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+.slide-showm:hover:after{
+    color: rgba(255,255,255,0.6);
+}
